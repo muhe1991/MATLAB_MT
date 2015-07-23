@@ -43,3 +43,15 @@ plot(x,time);
 x_2 = x;
 feasible_2 = feasible;
 time_2 = time;
+
+x_1 = 1:14;
+x_2 = 1:12;
+load alg1_500;
+plot(x_1, feasible_1);
+hold on;
+plot(x_2, feasible_2, 'r');
+figure;
+plot(x_1, time_1);
+hold on;
+plot(x_2, time_2, 'r');
+
