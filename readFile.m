@@ -4,7 +4,7 @@ filename = 'F:\Software\omnetpp-4.6-src-windows\omnetpp-4.6\samples\SimuLTE_D2D\
 [pathstr,name,ext] = fileparts(filename);
 %newname = [pathstr filesep name ext]
 %Tictoc{1} = importfile(filename)
-total = 500;
+total = 1200;
 for i=0:total-1
     part = num2str(i);
     newname = strrep(name, '0', part);
@@ -40,18 +40,20 @@ time=table(3,:)./table(1,:);
 plot(x,feasible);
 figure;
 plot(x,time);
-x_2 = x;
-feasible_2 = feasible;
-time_2 = time;
+x_3 = x;
+feasible_3 = feasible;
+time_3 = time;
 
-x_1 = 1:14;
-x_2 = 1:12;
-load alg1_500;
-plot(x_1, feasible_1);
-hold on;
-plot(x_2, feasible_2, 'r');
-figure;
-plot(x_1, time_1);
-hold on;
-plot(x_2, time_2, 'r');
+save alg3_500 x_3 feasible_3 time_3
+
+% x_1 = 1:14;
+% x_2 = 1:12;
+% load alg1_500;
+% plot(x_1, feasible_1);
+% hold on;
+% plot(x_2, feasible_2, 'r');
+% figure;
+% plot(x_1, time_1);
+% hold on;
+% plot(x_2, time_2, 'r');
 
