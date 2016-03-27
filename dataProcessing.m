@@ -1,6 +1,6 @@
 clc
 clear all;
-filename = 'F:\Software\omnetpp-4.6-src-windows\omnetpp-4.6\samples\SimuLTE_D2D\myPowerTest\results\PowerControl-0.sca';
+filename = 'F:\Software\omnetpp-4.6-src-windows\omnetpp-4.6\samples\OMNET_SimuLTE_framework-old\myPowerTest\results\General-0.sca';
 [pathstr,name,ext] = fileparts(filename);
 %newname = [pathstr filesep name ext]
 %Tictoc{1} = importfile(filename)
@@ -100,8 +100,8 @@ end
 % d5060 = plotValue;
 % save haha d5060 -append    
 
-plotValueAlg13_200_new = plotValue;
-save result plotValueAlg13_200_new -append
+plotValueAlg3 = plotValue;
+save result plotValueAlg3 -append
 
 % plotValueAlg1_phase1_200_Time = plotTimeValue;
 % save result plotValueAlg1_phase1_200_Time -append

@@ -10,13 +10,13 @@ density = [10:10:60]
 
 % removal - merge
 % 2-norm column
-line1 = plotValueAlg2_200(2,:) - plotValueAlg10_200(2,:)
+line1 = plotValueAlg2(2,:) - plotValueAlg10(2,:)
 % 1-norm column & row
-line2 = plotValueAlg11_200(2,:) - plotValueAlg3_200(2,:)
+line2 = plotValueAlg11(2,:) - plotValueAlg3(2,:)
 % inner product
-line3 = plotValueAlg7_200(2,:) - plotValueAlg8_200(2,:)
+line3 = plotValueAlg7(2,:) - plotValueAlg8(2,:)
 % product of row and column sum
-line4 = plotValueAlg12_200(2,:) - plotValueAlg13_200_new(2,:)
+line4 = plotValueAlg12(2,:) - plotValueAlg13(2,:)
 
 plot(density, line1,'-ks', 'linewidth',1.5)
 hold on
@@ -41,7 +41,7 @@ plot(density, line4,'-kp', 'linewidth',1.5)
 % title('Performance comparison based on active link density','fontsize',10,'Fontname','Times New Roman','FontWeight','bold');
 xlabel('Total Active Link Density in [links/cell])','fontsize',10,'Fontname','Times New Roman','FontWeight','bold');
 ylabel('Difference of Feasible Link Density in [links/cell])','fontsize',10,'Fontname','Times New Roman','FontWeight','bold');
-axis([0 70 -2 6])
+axis([0 70 -1 2])
 grid on;
 set(gca,'fontsize',10,'Fontname','Times New Roman','FontWeight','bold');
 set(gca);

@@ -8,13 +8,13 @@ area = 1*1;
 % figure;
 errorbar(plotValueAlg1_200_new(1,:)/area, plotValueAlg1_200_new(2,:), plotValueAlg1_200_new(3,:),'-r','linewidth',1.5);
 hold on;
-errorbar(plotValueAlg7_200(1,:)/area, plotValueAlg7_200(2,:), plotValueAlg7_200(3,:),'--k','linewidth',1.5);
+errorbar(plotValueAlg7(1,:)/area, plotValueAlg7(2,:), plotValueAlg7(3,:),'--k','linewidth',1.5);
 hold on;
-errorbar(plotValueAlg12_200(1,:)/area, plotValueAlg12_200(2,:), plotValueAlg12_200(3,:),'-k','linewidth',1.5);
+errorbar(plotValueAlg12(1,:)/area, plotValueAlg12(2,:), plotValueAlg12(3,:),'-k','linewidth',1.5);
 hold on;
-errorbar(plotValueAlg11_200(1,:)/area, plotValueAlg11_200(2,:), plotValueAlg11_200(3,:),'-.k','linewidth',1.5);
+errorbar(plotValueAlg11(1,:)/area, plotValueAlg11(2,:), plotValueAlg11(3,:),'-.k','linewidth',1.5);
 hold on;
-errorbar(plotValueAlg2_200(1,:)/area, plotValueAlg2_200(2,:), plotValueAlg2_200(3,:),':k','linewidth',1.5);
+errorbar(plotValueAlg2(1,:)/area, plotValueAlg2(2,:), plotValueAlg2(3,:),':k','linewidth',1.5);
 
 
 % title('Performance comparison based on active link density','fontsize',10,'Fontname','Times New Roman','FontWeight','bold');
